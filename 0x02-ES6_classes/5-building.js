@@ -10,7 +10,8 @@ class Building {
     return this._sqft;
   }
 
-  // Abstract method that should be overridden in subclasses
   evacuationWarningMessage() {
     throw new Error('Class extending Building must override evacuationWarningMessage');
   }
+
+export default Building;
