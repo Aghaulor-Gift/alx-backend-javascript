@@ -1,23 +1,7 @@
 class Currency {
   constructor(code, name) {
-    this._code = this._validateCode(code);
-    this._name = this._validateName(name);
-  }
-
-  // Validate code (String)
-  _validateCode(code) {
-    if (typeof code !== 'string') {
-      throw new TypeError('Code must be a string');
-    }
-    return code;
-  }
-
-  // Validate name (String)
-  _validateName(name) {
-    if (typeof name !== 'string') {
-      throw new TypeError('Name must be a string');
-    }
-    return name;
+    this._code = this.code;
+    this._name = this.name
   }
 
   // Getter and Setter for code
@@ -26,7 +10,7 @@ class Currency {
   }
 
   set code(code) {
-    this._code = this._validateCode(code);
+    this._code = this.code;
   }
 
   // Getter and Setter for name
@@ -35,7 +19,7 @@ class Currency {
   }
 
   set name(name) {
-    this._name = this._validateName(name);
+    this._name = this.name;
   }
 
   // Method to display the full currency
