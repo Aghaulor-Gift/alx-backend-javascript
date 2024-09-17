@@ -1,8 +1,9 @@
 // Print message
-const message = 'Hello NodeJS!';
 
 function displayMessage(message) {
-  console.log(message);
+	message = 'Hello NodeJS!';
+	console.log(message);
+
 }
 
 module.exports = displayMessage;
