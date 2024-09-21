@@ -7,15 +7,14 @@ function calculateNumber(type, a, b) {
 
   switch (type) {
     case 'SUM':
-      return roundedB + roundedA; 
-      }
+      return roundedA + roundedB; // Standard summation
     case 'SUBTRACT':
-      return roundedA - roundedB;
+      return roundedA - roundedB; // Standard subtraction
     case 'DIVIDE':
       if (roundedB === 0) {
-        return 'Error';
+        return 'Error'; // Handle division by zero
       }
-      return roundedA / roundedB;
+      return roundedA / roundedB; // Standard division
     default:
       throw new Error('Invalid operation type');
   }
